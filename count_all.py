@@ -9,12 +9,13 @@ def count_all(txt):
     """
     k=0
     j=0
-    for i in range(len(txt)):
+    i=0
+    while i<len(txt):
         if txt[i].isalpha():
             j+=1
         if txt[i].isdigit():
             k+=1
-
+        i+=1
     dict1={'latters': j,'digits': k}
     return dict1
-print(count_all('davron boy'))
+print(count_all('davr1on boy'))
