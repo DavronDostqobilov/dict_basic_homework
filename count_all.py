@@ -7,4 +7,14 @@ def count_all(txt):
     Returns:
         dict: dictionary with letters and digits
     """
-    return
+    k=0
+    j=0
+    for i in range(len(txt)):
+        if txt[i].isalpha():
+            j+=1
+        if txt[i].isdigit():
+            k+=1
+
+    dict1={'latters': j,'digits': k}
+    return dict1
+print(count_all('davron boy'))
