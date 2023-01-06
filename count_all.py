@@ -16,6 +16,6 @@ def count_all(txt):
         if txt[i].isdigit():
             k+=1
         i+=1
-    dict1={'latters': j,'digits': k}
+    dict1={'LETTERS': j,'DIGITS': k}
     return dict1
 print(count_all('davr1on boy'))
